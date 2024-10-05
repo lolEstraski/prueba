@@ -1,0 +1,36 @@
+{
+  "bicicletas": [
+    {
+      "nombre": "Trek Marlin 5",
+      "precio": 749.99,
+      "categoria": "MTB"
+    },
+    {
+      "nombre": "Specialized Rockhopper",
+      "precio": 899.99,
+      "categoria": "MTB"
+    },
+    {
+      "nombre": "Giant Defy",
+      "precio": 1299.99,
+      "categoria": "Ruta"
+    },
+    {
+      "nombre": "Cannondale Trail",
+      "precio": 849.99,
+      "categoria": "MTB"
+    },
+    {
+      "nombre": "Scott Aspect",
+      "precio": 699.99,
+      "categoria": "MTB"
+    }
+  ],
+  "categorias": [
+    "MTB",
+    "Ruta",
+    "Urbana",
+    "BMX"
+  ],
+  "total_inventario": 4499.95
+}
