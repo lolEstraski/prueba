@@ -13,6 +13,17 @@ public class ServicioInventario {
         productosPorCategoria.computeIfAbsent(categoria, k -> new ArrayList<>()).add(producto);
     }
 
+    public void crearProducto(String nombre, double precio, String categoria) {
+        Producto productoExistente = productoRepository.findByNombre(nombre);
+        if (productoExistente == null) {
+            Producto producto = new Inventario.Producto(nombre, precio, categoria);
+            productoRepositorio.save(producto);
+        } else {
+            throw new IllegalArgumentException("El producto ya existe.");
+        }
+    }
+
+
     public void eliminarProducto(String nombre, String categoria) {
         List<Inventario.Producto> productos = productosPorCategoria.get(categoria);
         if (productos != null) {
